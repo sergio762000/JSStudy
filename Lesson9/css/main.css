@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  width: 800px;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  margin: 0 15px;
+  height: auto;
+}
+
+h3 {
+  padding: 20px;
+  text-align: center;
+}
+
+.field-game {
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.field-game__block {
+  position: relative;
+  width: calc((100% - 10px) / 2);
+  height: 380px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid orangered;
+  list-style: none;
+  color: #fff;
+  background-color: #fff;
+  font-size: 60px;
+}
+
+.field-game__visible {
+  color: orangered;
+  background-color: #fff;
+}
+
+.field-game__block:not(:nth-child(2n)) {
+  margin-right: 10px;
+}
